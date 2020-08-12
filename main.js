@@ -1,9 +1,35 @@
 'use strict'
 
-const menuPoint = ['Home', 'About us', 'Services', 'Contacts', 'Login'];
+const menuPoint = ['Home', 'About us', 'Services', 'Contacts', '<a href="#"> <img src="https://img.icons8.com/dusk/64/000000/test-account.png"/> Login </a>'];
+const subMenu = [];
+const subMenu1 = [];
+const subMenu2 = [];
+const subMenu3 = [];
+const newsObj = [
+    {
+        id: 1,
+        photo: '',
+        title: '',
+        description: ''
+    },
+    {
+        id: 2,
+        photo: '',
+        title: '',
+        description: ''
+    },
+    {
+        id: 3,
+        photo: '',
+        title: '',
+        description: ''
+    },
+]
 
 function Template (nameId) {
     this.container = document.querySelector(nameId);
+
+//header charter
 
     this.header = document.createElement('header');
     this.topMenuDiv = document.createElement('div');
@@ -26,16 +52,32 @@ function Template (nameId) {
     this.pdescriptionOfPage = document.createElement('p');
     this.pdescriptionOfPage.innerHTML = 'Multichoise flower shop. We can propouse you all what you want!'
 
+// content charter
+
     this.topContentDiv = document.createElement('div');
     this.topContentDiv.className = 'top_content_wrap';
     this.h1mainDescription = document.createElement('h1');
     this.h1mainDescription.innerHTML = 'Lorem ipsum is simply pimpli';
     this.pmainDescription = document.createElement('p');
     this.pmainDescription.innerHTML = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci molestiae placeat quis autem. Impedit beatae amet consectetur esse enim, aliquid asperiores pariatur et. Nobis quo dolorem aliquam reiciendis debitis. Molestiae!';
+    this.iconsImgDiv = document.createElement('div');
+    this.iconsImgDiv.className = 'icons_wrap';
+    this.ticketsIcon = document.createElement('img');
+    this.ticketsIcon.src = 'https://img.icons8.com/dusk/64/000000/two-tickets.png'
+    this.cameraIcon = document.createElement('img');
+    this.cameraIcon.src = 'https://img.icons8.com/dusk/64/000000/slr-camera.png';
+    this.partyIcon = document.createElement('img');
+    this.partyIcon.src = 'https://img.icons8.com/dusk/64/000000/confetti.png';
+    this.deviceIcon = document.createElement('img');
+    this.deviceIcon.src = 'https://img.icons8.com/dusk/64/000000/smartphone-tablet.png';
+
     this.bottomContentDiv = document.createElement('div');
     this.bottomContentDiv.className = 'bottom_content_wrap';
 
+// footer charter
+
     this.footer = document.createElement('footer');
+
 
     this.container.appendChild(this.header);
     this.container.appendChild(this.topContentDiv);
@@ -55,7 +97,13 @@ function Template (nameId) {
 
     this.topContentDiv.appendChild(this.h1mainDescription);
     this.topContentDiv.appendChild(this.pmainDescription);
-    
+    this.topContentDiv.appendChild(this.iconsImgDiv);
+    this.iconsImgDiv.appendChild(this.ticketsIcon);
+    this.iconsImgDiv.appendChild(this.cameraIcon);
+    this.iconsImgDiv.appendChild(this.partyIcon);
+    this.iconsImgDiv.appendChild(this.deviceIcon);
+
+    this.bottomContentDiv.appendChild();
 
     this.subMenu = function (ulName, arr) {
         this.ul = ulName;
