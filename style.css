@@ -152,6 +152,7 @@ button, button:active, button:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-bottom: 2px solid #cacaca;
 }
 
 .top_content_wrap h1 {
@@ -182,6 +183,44 @@ button, button:active, button:focus {
     padding: 30px 30px;
     background-color: #ff5649;
     border-radius: 10%;
-    border-bottom: 1px solid #cacaca;
 }
 
+.bottom_content_wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.img_wrap {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.img_wrap:last-child {
+    margin-bottom: 20px;
+}
+
+.img_wrap img {
+    display: block;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.img_wrap h1 , .img_wrap p{
+    display: block;
+    color: #676767;
+    margin: 20px 0 20px 20px;
+}
+
+.img_wrap h1 {
+    font-size: 25px;
+}
+
+.img_wrap p {
+    display: block;
+    line-height: 20px;
+}
