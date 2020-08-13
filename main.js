@@ -8,19 +8,19 @@ const subMenu3 = ['JQuery', 'Magento', 'Mobile', 'Photoshop', 'Plugins', 'Resour
 const newsObj = [
     {
         id: 1,
-        photo: '../GraffPink_full_js_constructor_template/img/tulip.jpg',
+        photo: 'img/tulip.jpg',
         title: 'Fun facts about flowers',
         description: 'Tulip bulbs were more valuable than gold in Holland in the 1600s. Tulip bulbs can be substituted for onions in a recipe.'
     },
     {
         id: 2,
-        photo: '../GraffPink_full_js_constructor_template/img/asters.jpg',
+        photo: 'img/asters.jpg',
         title: 'Fun facts about flowers',
         description: 'Ancient civilizations burned aster leaves to ward off evil spirits.  Hundreds of years ago, when Vikings invaded Scotland, they were slowed by patches of wild thistle, allowing the Scots time to escape. Because of this, the wild thistle was named Scotland’s national flower.'
     },
     {
         id: 3,
-        photo: '../GraffPink_full_js_constructor_template/img/lotus.jpg',
+        photo: 'img/lotus.jpg',
         title: 'Fun facts about flowers',
         description: 'The lotus was considered a sacred flower by ancient Egyptians and was used in burial rituals. This flower blooms in rivers and damp wetlands, but may lie dormant for years during times of drought, only to rise again with the return of water. Egyptians viewed it as a symbol of resurrection and eternal life.'
     },
@@ -37,7 +37,7 @@ function Template (nameId) {
     this.nameGraffDiv = document.createElement('div');
     this.nameGraffDiv.className = 'name_page_wrap';
     this.nameImg = document.createElement('img');
-    this.nameImg.src = '../GraffPink_full_js_constructor_template/img/logo.png'
+    this.nameImg.src = 'img/logo.png'
     this.loginMenuDiv = document.createElement('div');
     this.loginMenuDiv.className = 'login_menu_wrap';
     this.ulMenu = document.createElement('ul');
