@@ -39,7 +39,7 @@ button, button:active, button:focus {
     max-width: 1000px;
     height: 500px;
     margin: 0 auto;
-    background-image: url(../GraffPink_full_js_constructor_template/img/banner.jpg);
+    background-image: url(img/banner.jpg);
     position: relative;
 }
 
