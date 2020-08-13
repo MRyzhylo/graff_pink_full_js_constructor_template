@@ -1,10 +1,10 @@
 'use strict'
 
 const menuPoint = ['Home', 'About us', 'Services', 'Contacts', '<a href="#"> <img src="https://img.icons8.com/dusk/64/000000/test-account.png"/> Login </a>'];
-const subMenu = [];
-const subMenu1 = [];
-const subMenu2 = [];
-const subMenu3 = [];
+const subMenu = ['Android', 'Apps', 'Articles', 'Backgrounds', 'Blogger', 'Books', 'Codding'];
+const subMenu1 = ['Freebies', 'Greetings', 'Icons', 'Illustrator', 'Inspiration', 'iPad', 'iPhone'];
+const subMenu2 = ['Drupal', 'Fonts', 'Freebies', 'Greetings', 'Icons', 'Illustrator', 'Inspiration'];
+const subMenu3 = ['JQuery', 'Magento', 'Mobile', 'Photoshop', 'Plugins', 'Resource', 'Template'];
 const newsObj = [
     {
         id: 1,
@@ -77,7 +77,41 @@ function Template (nameId) {
 // footer charter
 
     this.footer = document.createElement('footer');
-
+    this.footerContent = document.createElement('div');
+    this.footerContent.className = 'footer_content_wrap';
+    this.subMenuDiv1 = document.createElement('div');
+    this.subMenuDiv1.className = 'sub_menu_wrap';
+    this.subMenuDiv2 = document.createElement('div');
+    this.subMenuDiv2.className = 'sub_menu_wrap';
+    this.subMenuDiv3 = document.createElement('div');
+    this.subMenuDiv3.className = 'sub_menu_wrap';
+    this.subMenuDiv4 = document.createElement('div');
+    this.subMenuDiv4.className = 'sub_menu_wrap';
+    this.socialMediaDiv = document.createElement('div');
+    this.socialMediaDiv.className = 'social_media_wrap';
+    this.h1Sub1 = document.createElement('h1');
+    this.h1Sub1.innerHTML = 'Sub menu';
+    this.h1Sub2 = document.createElement('h1');
+    this.h1Sub2.innerHTML = 'Sub menu';
+    this.h1Sub3 = document.createElement('h1');
+    this.h1Sub3.innerHTML = 'Sub menu';
+    this.h1Sub4 = document.createElement('h1');
+    this.h1Sub4.innerHTML = 'Sub menu';
+    this.ulSubMenu1 = document.createElement('ul');
+    this.ulSubMenu2 = document.createElement('ul');
+    this.ulSubMenu3 = document.createElement('ul');
+    this.ulSubMenu4 = document.createElement('ul');
+    this.sMediaImg1 = document.createElement('img');
+    this.sMediaImg1.src = 'https://img.icons8.com/material-two-tone/24/000000/instagram-new.png';
+    this.sMediaImg2 = document.createElement('img');
+    this.sMediaImg2.src = 'https://img.icons8.com/material-two-tone/24/000000/facebook-new.png';
+    this.sMediaImg3 = document.createElement('img');
+    this.sMediaImg3.src = 'https://img.icons8.com/material-two-tone/24/000000/pinterest.png';
+    this.sMediaImg4 = document.createElement('img');
+    this.sMediaImg4.src = 'https://img.icons8.com/material-two-tone/24/000000/telegram-app.png';
+    this.pCopyright = document.createElement('p');
+    this.pCopyright.innerHTML = 'Copyright &#169; 1990 - 2020 MRyzhylo';
+    
 
     this.container.appendChild(this.header);
     this.container.appendChild(this.topContentDiv);
@@ -103,6 +137,27 @@ function Template (nameId) {
     this.iconsImgDiv.appendChild(this.partyIcon);
     this.iconsImgDiv.appendChild(this.deviceIcon);
 
+    this.footer.appendChild(this.footerContent);
+    this.footerContent.appendChild(this.subMenuDiv1);
+    this.footerContent.appendChild(this.subMenuDiv2);
+    this.footerContent.appendChild(this.subMenuDiv3);
+    this.footerContent.appendChild(this.subMenuDiv4);
+    this.footerContent.appendChild(this.socialMediaDiv);
+    
+    this.subMenuDiv1.appendChild(this.h1Sub1);
+    this.subMenuDiv2.appendChild(this.h1Sub2);
+    this.subMenuDiv3.appendChild(this.h1Sub3);
+    this.subMenuDiv4.appendChild(this.h1Sub4);
+    this.subMenuDiv1.appendChild(this.ulSubMenu1);
+    this.subMenuDiv2.appendChild(this.ulSubMenu2);
+    this.subMenuDiv3.appendChild(this.ulSubMenu3);
+    this.subMenuDiv4.appendChild(this.ulSubMenu4);
+    this.socialMediaDiv.appendChild(this.sMediaImg1);
+    this.socialMediaDiv.appendChild(this.sMediaImg2);
+    this.socialMediaDiv.appendChild(this.sMediaImg3);
+    this.socialMediaDiv.appendChild(this.sMediaImg4);
+    this.socialMediaDiv.appendChild(this.pCopyright);
+
 
     this.subMenu = function (ulName, arr) {
         this.ul = ulName;
@@ -114,6 +169,10 @@ function Template (nameId) {
         }
     }.bind(this)
     this.subMenu (this.ulMenu, menuPoint);
+    this.subMenu (this.ulSubMenu1, subMenu);
+    this.subMenu (this.ulSubMenu2, subMenu1);
+    this.subMenu (this.ulSubMenu3, subMenu2);
+    this.subMenu (this.ulSubMenu4, subMenu3);
 
     this.contentMenu = function (divName, obj) {
         this.mainDiv = divName;

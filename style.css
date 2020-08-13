@@ -195,7 +195,9 @@ button, button:active, button:focus {
     display: flex;
     flex-direction: row;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
+    border: 1px solid #cacaca;
+    box-shadow: 1px 1px 3px #cacaca;
 }
 
 .img_wrap:last-child {
@@ -223,4 +225,56 @@ button, button:active, button:focus {
 .img_wrap p {
     display: block;
     line-height: 20px;
+}
+
+footer {
+    max-width: 1000px;
+    height: 250px;
+    margin: 10px auto;
+    background-color: #262828;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_content_wrap {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub_menu_wrap {
+    width: 20%;
+    margin: 10px 0;
+    color: #888887;
+}
+
+.sub_menu_wrap h1 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+
+.sub_menu_wrap ul li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.social_media_wrap {
+    width: 20%;
+    margin: 40px 0;
+}
+
+.social_media_wrap img {
+    margin: 30px 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #696b6a;
+    border-radius: 50%;
+}
+
+.social_media_wrap p {
+    font-size: 9px;
+    color: #888887;
+    margin: 0 5px;
 }
